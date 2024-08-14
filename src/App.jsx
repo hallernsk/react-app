@@ -1,14 +1,20 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import Video from './Video/Video'
+import Video from './components/Video'
+import Header from './components/Header'
 import { VIDEOS } from './videos'
 import './App.css'
+
+
+
 
 function App() {
   return (
     <>
+      <Header />
       <div className='video-container'>
-        {/* <Video title="Video14" channelName="MyChannel" img={reactLogo} /> */}
+
+
         {VIDEOS.map((video) => (
           <Video
             key={video.id}
